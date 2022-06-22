@@ -163,7 +163,7 @@ function tradePlayers(playerId1, playerId2) {
 
                 var accept2 = container.replaceDocument(player2._self, player2,
                     function (err2, itemReplaced2) {
-                        if (err) throw "Unable to update player 2, abort"
+                        if (err2) throw "Unable to update player 2, abort"
                     });
 
                 if (!accept2) throw "Unable to update player 2, abort";
